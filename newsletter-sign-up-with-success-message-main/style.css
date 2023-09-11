@@ -32,3 +32,44 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background: var(--charcoal-grey);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: var(--font-size);
+  font-family: var(--regular);
+}
+
+h1 {
+  font-family: var(--bold);
+}
+
+ul {
+  list-style: none;
+}
+
+.sign-up-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+}
+
+.sign-up-card-image img {
+  height: 500px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center; 
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
