@@ -8,8 +8,8 @@
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
 
-  --font-bold: 700;
   --font-regular: 400;
+  --font-bold: 700;
 }
 
 * {
