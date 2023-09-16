@@ -12,59 +12,136 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <main>
+    <!-- Sign-up form start -->
+    <div class="sign-up-card">
+      <div class="sign-up-card-content">
+        <h1>Stay updated!</h1>
+      
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      
+        <ul>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="">
+            Product discovery and building what matters
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="">
+            Measuring to ensure updates are a success
+          </li>
+          <li>
+            <img src="./assets/images/icon-list.svg" alt="">
+            And much more!
+          </li>
+        </ul>
 
-  <!-- Sign-up form start -->
-  <div class="sign-up-card">
-    <div class="sign-up-card-content">
-      <h1>Stay updated!</h1>
-    
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    
-      <ul>
-        <li>
-          <img src="./assets/images/icon-list.svg" alt="">
-          Product discovery and building what matters
-        </li>
-        <li>
-          <img src="./assets/images/icon-list.svg" alt="">
-          Measuring to ensure updates are a success
-        </li>
-        <li>
-          <img src="./assets/images/icon-list.svg" alt="">
-          And much more!
-        </li>
-      </ul>
-
-      <div class="sign-up-form">
-        <label for="email-address">
-          Email address
-          <input type="email" placeholder="email@company.com">
-        </label>
-        <button type="submit">Subscribe to monthly newsletter</button>      
+        <form class="sign-up-form">
+          <label for="email-address">
+            Email address
+            <span class="error"></span>
+            <!-- <span class="error" style="display: none;">Valid email required</span> -->
+          </label>
+          <input class="email-input" type="email" placeholder="email@company.com" required>
+          <button type="submit">Subscribe to monthly newsletter</button>      
+        </form>
+      
       </div>
+      <div class="sign-up-card-image">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Sign up Card Image">
+      </div>
+    </div>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <div class="success">
+      <img src="./assets/images/icon-success.svg" alt="">
+      <h2>Thanks for subscribing!</h2>
     
+      <p>A confirmation email has been sent to <a>ash@loremcompany.com</a>. 
+      Please open it and click the button inside to confirm your subscription.</p>
+    
+      <button type="button" class="dismiss">Dismiss message</button>
     </div>
-    <div class="sign-up-card-image">
-      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Sign up Card Image">
+
+    <!-- Success message end -->
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mohammad Newton</a>.
     </div>
-  </div>
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-  <!-- Success message end -->
+  </main>
+  <script>
+    // window.addEventListener('DOMContentLoaded', (event) => {
+    //   const form = document.querySelector('.sign-up-form');
+    //   const successful = document.querySelector('.success');
+    //   const mainPage = document.querySelector('.sign-up-card')
+    //   const dismissButton = document.querySelector('.dismiss')
   
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    //   dismissButton.addEventListener('click', () => {
+    //     successful.style.display = 'none';
+    //     mainPage.style.display = 'block'
+    //   })
+      
+    //   form.addEventListener('submit', (e) => {
+    //     e.preventDefault();
+    //     const emailInput = document.querySelector('.email-input').value;
+    //     const correctEmail = emailInput.toLowerCase();
+    //     if(emailInput === correctEmail){
+    //       form.submit()
+    //       successful.style.display = 'block';
+    //       mainPage.style.display = 'none'
+    //     } else {
+    //       const error = document.querySelector('.error');
+    //       const emailInput = document.querySelector('.email-input');
+    //       error.textContent = 'Valid email required';
+    //       error.style.display = 'block';
+    //       emailInput.style = `
+    //         border: 1px solid red;
+    //         background: hsl(4, 100%, 97%)
+    //         outline: none
+    //       `
+    //     }
+    //   })
+    // })
+    window.addEventListener('DOMContentLoaded', (event) => {
+  const form = document.querySelector('.sign-up-form');
+  const successful = document.querySelector('.success');
+  const mainPage = document.querySelector('.sign-up-card');
+  const dismissButton = document.querySelector('.dismiss');
+
+  dismissButton.addEventListener('click', () => {
+    successful.style.display = 'none';
+    mainPage.style.display = 'flex';
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const emailInput = document.querySelector('.email-input').value;
+    const correctEmail = emailInput.toLowerCase();
+
+    if (emailInput === correctEmail) {
+      // Simulate a delay for demonstration purposes
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      // After the delay, show the success message
+      successful.style.display = 'flex';
+      mainPage.style.display = 'none';
+    } else {
+      const error = document.querySelector('.error');
+      const emailInput = document.querySelector('.email-input');
+      error.textContent = 'Valid email required';
+      error.style.display = 'block';
+      emailInput.style = `
+        border: 1px solid red;
+        background: hsl(4, 100%, 97%);
+        outline: none;
+      `;
+    }
+  });
+});
+
+  </script>
 </body>
 </html>
