@@ -63,17 +63,69 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  gap: 10px;
+  padding: 15px;
 }
 
 .card-img img {
   overflow: hidden;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+
+.card-description {
+  display: grid;
+  gap: 10px;
+}
+
+.card-description p {
+  font-family: var(--font-variable);
+  font-weight: 400;
+  color: var(--grey);
+}
+
+.card-description p:first-child {
+  font-family: var(--font-extrabold);
+  color: var(--black);
+  background-color: var(--yellow);
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.card-description h3 {
+  font-weight: lighter;
+  color: var(--black);
+  font-size: var(--font-paragraph);
+}
+
+.card-description h2 {
+  font-family: var(--font-extrabold);
+  color: var(--black);
+  font-size: 25px;
+  letter-spacing: -2px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.user img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.user h2 {
+  font-family: var(--font-extrabold);
+  color: var(--black);
+  font-size: var(--font-paragraph);
 }
 
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
