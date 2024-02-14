@@ -31,6 +31,20 @@
 
   /* Typography */
   --font-size-paragraph: 16px;
+
+  /* Font Weights */
+  /* Young Serif */
+  --young-serif-weight: 400;
+
+  /* Outfit */
+  --outfit-normal-weight: 400;
+  --outfit-weight: 600;
+  --outfit-bold-weight: 700;
+}
+
+body {
+  background-color: var(--rose-white);
+  font-family: "Outfit", sans-serif;
 }
 
 .attribution {
