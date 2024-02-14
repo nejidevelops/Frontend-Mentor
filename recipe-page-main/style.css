@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center; 
