@@ -72,6 +72,17 @@ h3 {
   font-size: 20px;
 }
 
+/* Image reset CSS */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center; 
