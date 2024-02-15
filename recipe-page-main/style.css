@@ -43,7 +43,7 @@
 }
 
 body {
-  background-color: var(--rose-white);
+  background-color: var(--eggshell);
   font-family: "Outfit", sans-serif;
 }
 
@@ -87,11 +87,29 @@ article {
   width: 672px;
   display: grid;
   margin-inline: auto;
+  margin-block: 4rem;
   background-color: var(--white);
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
   gap: 2rem;
+}
+
+article *:not(h1, h2, h3, h4, h5, h6) {
+  font-family: "Outfit", sans-serif;
+  font-weight: var(--outfit-normal-weight);
+}
+
+article h2 {
+  color: var(--nutmeg);
+}
+
+article span {
+  font-weight: var(--outfit-weight);
+}
+
+article h3 {
+  color: var(--dark-raspberry);
 }
 
 .omelette-image {
