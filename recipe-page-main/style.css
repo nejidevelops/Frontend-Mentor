@@ -110,6 +110,7 @@ article span {
 
 article h3 {
   color: var(--dark-raspberry);
+  font-family: var(--outfit-normal-weight);
 }
 
 .omelette-image {
@@ -131,7 +132,7 @@ article h3 {
 
 .preparation {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.25rem;
   background-color: var(--rose-white);
   border-radius: 1rem;
   padding: 2rem;
@@ -139,12 +140,16 @@ article h3 {
 
 .preparation ul {
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
   padding: 1rem 2rem;
 }
 
 .preparation ul li::marker {
   color: var(--dark-raspberry);
+}
+
+.preparation ul li span {
+  margin-left: 1rem;
 }
 
 .attribution {
