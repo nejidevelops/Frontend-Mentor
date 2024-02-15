@@ -83,6 +83,34 @@ img {
   shape-margin: 1rem;
 }
 
+article {
+  width: 672px;
+  display: grid;
+  margin-inline: auto;
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  gap: 2rem;
+}
+
+.omelette-image {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.omelette-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-sec {
+  display: grid;
+  gap: 1rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center; 
