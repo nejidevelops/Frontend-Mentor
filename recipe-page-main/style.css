@@ -129,6 +129,24 @@ article h3 {
   gap: 1rem;
 }
 
+.preparation {
+  display: grid;
+  gap: 0.5rem;
+  background-color: var(--rose-white);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.preparation ul {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.preparation ul li::marker {
+  color: var(--dark-raspberry);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center; 
