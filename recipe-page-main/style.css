@@ -102,6 +102,7 @@ article *:not(h1, h2, h3, h4, h5, h6) {
 
 article h2 {
   color: var(--nutmeg);
+  font-weight: var(--outfit-normal-weight);
 }
 
 article span {
@@ -150,6 +151,20 @@ article h3 {
 
 .preparation ul li span {
   margin-left: 1rem;
+}
+
+.ingredients ul {
+  padding: 1.4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.ingredients ul li {
+  padding-left: 1rem;
+}
+
+.ingredients ul li::marker {
+  color: var(--nutmeg);
 }
 
 .attribution {
