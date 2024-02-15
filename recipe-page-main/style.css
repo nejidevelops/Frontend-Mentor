@@ -167,6 +167,22 @@ article h3 {
   color: var(--nutmeg);
 }
 
+.instructions ol {
+  padding: 1.4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.instructions ol li {
+  padding-left: 1rem;
+}
+
+.instructions ol li::marker {
+  color: var(--nutmeg);
+  font-family: "Outfit";
+  font-weight: var(--outfit-bold-weight);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center; 
