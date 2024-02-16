@@ -30,6 +30,19 @@
   --font-weight-bold: 700;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-inter);
+  background-color: var(--off-black);
+  color: var(--white);
+  font-size: var(--font-size-paragraph);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
