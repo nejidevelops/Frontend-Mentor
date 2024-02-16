@@ -107,3 +107,26 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  article {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  .owner h1 {
+    font-size: 1.2rem;
+  }
+
+  .socials a {
+    font-size: 0.8rem;
+  }
+}
