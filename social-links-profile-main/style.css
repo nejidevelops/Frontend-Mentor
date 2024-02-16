@@ -41,6 +41,62 @@ body {
   background-color: var(--off-black);
   color: var(--white);
   font-size: var(--font-size-paragraph);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-color: var(--dark-grey);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 30%;
+}
+
+img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.owner h1 {
+  font-weight: var(--font-weight-bold);
+  font-size: 1.5rem;
+}
+
+.owner p {
+  color: var(--green);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.about-me p {
+  font-weight: var(--font-weight-regular);
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--grey);
+  font-weight: var(--font-weight-semi-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 .attribution {
