@@ -114,6 +114,15 @@ article h3 {
   font-family: var(--outfit-normal-weight);
 }
 
+section {
+  border-bottom: 1px solid var(--light-grey);
+  padding: 0.5rem 0;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
 .omelette-image {
   width: 100%;
   border-radius: 1rem;
@@ -180,6 +189,37 @@ article h3 {
 .instructions ol li::marker {
   color: var(--nutmeg);
   font-family: "Outfit";
+  font-weight: var(--outfit-bold-weight);
+}
+
+.nutrition {
+  display: grid;
+  gap: 1rem;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition tr {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition td {
+  padding: 0.75rem 2rem;
+}
+
+.nutrition td:first-child {
+  font-weight: var(--outfit-bold-weight);
+}
+
+.nutrition td:last-child {
+  color: var(--nutmeg);
   font-weight: var(--outfit-bold-weight);
 }
 
