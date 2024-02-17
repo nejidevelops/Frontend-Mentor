@@ -231,3 +231,34 @@ section:last-child {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  article {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+
+  .omelette-image {
+    border-radius: 0;
+  }
+
+  .preparation,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    padding: 1rem;
+  }
+
+  .nutrition table {
+    font-size: 14px;
+  }
+
+  .attribution {
+    font-size: 10px;
+  }
+}
