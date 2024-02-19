@@ -145,3 +145,16 @@ body {
   color: var(--desaturated-blue);
   margin: 0 auto;
 }
+
+.card-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: var(--pale-blue);
+  /* background-color: red; */
+  opacity: 0.;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
