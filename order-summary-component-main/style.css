@@ -116,4 +116,32 @@ body {
 
 .card {
   background-color: var(--very-pale-blue);
+  width: 360px;
+  border-radius: .75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0,.15);
+  overflow: hidden;
+  display: grid;
+  gap: 1rem;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.card-text h1 {
+  font-weight: var(--weight-level-3);
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+  margin-top: 0.5rem;
+}
+
+.card-description p {
+  font-size: 1rem;
+  color: var(--desaturated-blue);
+  margin: 0 auto;
 }
