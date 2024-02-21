@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+
+  /* Primary Colors */
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+
+  /* Typography */
+
+  /* Headings */
+  --heading-font-family: "Poppins", sans-serif;
+  --heading-fw-1: 600;
+  --heading-fw-2: 400;
+
+  /* Body Color */
+  --body-font-family: "Open Sans", sans-serif;
+  --body-fw: 400;
 }
 
 .attribution {
