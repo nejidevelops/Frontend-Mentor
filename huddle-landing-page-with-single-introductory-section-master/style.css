@@ -25,6 +25,27 @@
   --body-fw: 400;
 }
 
+body {
+  font-family: var(--body-font-family);
+  background-color: var(--violet);
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+header {
+  padding: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
