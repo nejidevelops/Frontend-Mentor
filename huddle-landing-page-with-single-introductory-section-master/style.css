@@ -30,8 +30,7 @@ body {
   background-color: var(--violet);
   background-image: url(./images/bg-desktop.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
   min-height: 100vh;
 }
 
@@ -42,8 +41,7 @@ header {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* height: 100vh; */
+  padding: 30px;
 }
 
 .attribution {
