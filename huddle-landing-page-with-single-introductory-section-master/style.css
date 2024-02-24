@@ -32,6 +32,21 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 100vh;
+  color: #fff;
+}
+
+h1 {
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-fw-1);
+  font-size: 2.5rem;
+}
+
+p {
+  font-weight: var(--body-fw);
+}
+
+img {
+  max-width: 100%;
 }
 
 header {
@@ -42,6 +57,35 @@ main {
   display: flex;
   justify-content: center;
   padding: 30px;
+  gap: 3rem;
+  width: 100%;
+}
+
+main img {
+  width: 100%;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+main div p {
+  font-size: 1.1rem;
+}
+
+main div button {
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  color: var(--violet);
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-fw-1);
 }
 
 .attribution {
