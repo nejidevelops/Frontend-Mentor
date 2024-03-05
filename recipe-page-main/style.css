@@ -239,8 +239,9 @@ section:last-child {
 
   article {
     width: 100%;
-    margin: 2rem 0;
+    margin: 0;
     padding: 1rem;
+    border-radius: 0;
   }
 
   .omelette-image {
