@@ -99,6 +99,13 @@ img {
   border-radius: 0.5rem;
 }
 
+.socials a:hover,
+.socials a:focus, 
+.socials a:active {
+  background-color: var(--green);
+  color: var(--off-black);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
