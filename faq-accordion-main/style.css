@@ -43,7 +43,8 @@ p {
 }
 
 article {
-  background-color: var(--white);width: 300px;
+  background-color: var(--white);
+  width: 300px;
 }
 
 .attribution {
