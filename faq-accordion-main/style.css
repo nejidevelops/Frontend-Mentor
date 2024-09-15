@@ -29,6 +29,7 @@
 
 p {
   font-size: var(--font-size-paragraph);
+  color: var(--grayish-purple);
 }
 
 body {
@@ -54,6 +55,24 @@ article {
   background-color: var(--white);
   max-width: 620px;
   width: 100%;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 3rem 0;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}
+
+article h1 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--dark-purple);
+}
+
+h2 {
+  font-weight: 600;
 }
 
 /* .attribution {
