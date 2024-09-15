@@ -27,31 +27,40 @@
   --font-weight-bold: 700;
 }
 
-body {
-  font-family: WorkSans;
-  background: url(./assets/images/background-pattern-desktop.svg);
-  background-repeat: no-repeat;
-  background-color: var(--light-pink);
-  height: 100vh;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-}
-
 p {
   font-size: var(--font-size-paragraph);
 }
 
-article {
-  background-color: var(--white);
-  width: 300px;
+body {
+  font-family: WorkSans;
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: var(--light-pink);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.attribution {
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+  }
+}
+
+article {
+  background-color: var(--white);
+  max-width: 620px;
+  width: 100%;
+}
+
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
